@@ -1,0 +1,93 @@
+/* QUI SOMMES NOUS */
+.page_title_qui {
+    font-size: 2.5rem;
+}
+
+.mr_defretin_photo_container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.mrdefretin_photo {
+    min-height: 150px;
+}
+
+.mr_defretin_photo_container>h4 {
+    padding-top: 40px;
+    color: #0069AA;
+}
+
+.qui_content {
+    margin-top: 50px;
+}
+
+.page_title_who {
+    background-image: url('../img/who.jpg');
+    background-size: 100%;
+}
+
+.qui_paragraph {
+    border-left: 2px solid gray;
+    padding-left: 10px;
+    margin-top: 40px;
+}
+
+.qui_paragraph2 {
+    text-align: end;
+    border-right: 2px solid gray;
+    padding-right: 10px;
+    margin-top: 40px;
+}
+
+.btn_container {
+    margin: 20px 0;
+}
+
+
+/* Responsive webdesign for middle sized devices */
+@media only screen and (min-width: 768px) {
+    .mr_defretin_photo_container {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .mrdefretin_photo {
+        min-height: 250px;
+    }
+
+    .mr_defretin_photo_container>h4 {
+        margin-left: 50px;
+    }
+
+    .qui_content>h4 {
+        font-size: 3.5rem;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .qui_content>p {
+        font-size: 1.5rem;
+    }
+}
+
+/* Responsive webdesign for large sized devices */
+@media only screen and (min-width: 1000px) {
+
+    main,
+    body,
+    html {
+        overflow:visible;
+    }
+
+    .btn_container {
+        margin-right: 10px;
+        position: sticky;
+        top: 130px;
+    }
+
+    .qui_paragraph,
+    .qui_paragraph2 {
+        visibility: hidden;
+    }
+
+}

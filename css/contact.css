@@ -1,0 +1,247 @@
+/* CONTACT */
+.contact_on_large {
+    display: none;
+}
+
+.page_title_contact {
+    background-image: url('../img/contact.jpg');
+    background-size: 100%;
+}
+
+.contact_photo_div {
+    display: flex;
+    justify-content: center;
+    border-right: 2px solid hsl(203, 98%, 19%);
+}
+
+.coordonnees {
+    background-color: white;
+    margin: 30px 12px;
+    padding: 10px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.3);
+}
+
+.contact_photo,
+.coordonnees_content {
+    min-height: 110px!important;
+}
+
+.coordonnees_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.coordonnees_title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: hsl(203, 98%, 19%);
+}
+
+.coordonnes_line {
+    margin: 0;
+}
+
+.iframe_maps {
+    display: flex;
+    justify-content: center;
+}
+
+.iframe_maps>iframe {
+    max-width: 90%;
+    max-height: 200px;
+}
+
+.contact_form {
+    background-color: white;
+    margin: 30px 12px;
+    padding: 10px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.3);
+}
+
+.titre_formulaire {
+    color: hsl(203, 98%, 19%);
+    padding-left: 20px;
+}
+
+.validate:focus,
+.materialize-textarea:focus {
+    box-shadow: none!important;
+}
+
+.alert-danger,
+.alert-success {
+    padding: 5px;
+    margin: 25px;
+}
+
+.alert-success {
+    color: green;
+}
+
+.alert-danger {
+    color: rgb(175, 2, 2);
+}
+
+.form_anchor {
+    color: rgb(175, 2, 2);
+    text-decoration: underline;
+}
+
+.input_alert {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    margin-bottom: 0;
+}
+
+#submit_btn_contact {
+    background-color: hsl(203, 98%, 19%);
+    margin-top: 15px;
+    font-size: 1.4rem;
+}
+
+.fb_iframe_container {
+    padding: 0;
+    background-color: rgb(243, 243, 243);
+}
+
+.fb-page {
+    margin: 0;
+    padding: 0!important;
+}
+
+
+
+/* Responsive webdesign for middle sized devices */
+@media only screen and (min-width: 768px) {
+    .coordonnees {
+        margin: 30px 100px;
+        padding: 10px;
+    }
+
+    .contact_photo_div {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 30px!important;
+        border-right: 3px solid hsl(203, 98%, 19%);
+    }
+
+    .contact_photo,
+    .coordonnees_content {
+        min-height: 200px!important;
+    }
+
+    .coordonnes_line {
+        font-size: 2rem;
+    }
+
+    .iframe_maps,
+    .iframe_maps>iframe {
+        min-height: 350px;
+    }
+
+    #contact_form {
+        margin: 100px;
+        margin-top: 100px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .titre_formulaire {
+        font-size: 3rem;
+        margin-bottom: 40px;
+    }
+
+    .input-field {
+        margin-bottom: 30px;
+    }
+
+    .input-field>label {
+        font-size: 1.5rem;
+    }
+
+    #submit_btn_contact {
+        font-size: 2rem;
+    }
+
+    .alert-danger {
+        font-size: 1.5rem;
+    }
+
+    .input_alert {
+        font-size: 1.5rem;
+    }
+
+    .fb_iframe_container {
+        display: flex!important;
+        justify-content: center!important;
+    }
+
+    .fb-page {
+        width: 80vw;
+        display: flex!important;
+        justify-content: center!important;
+    }
+
+}
+
+/* Responsive webdesign for large sized devices */
+@media only screen and (min-width: 1000px) {
+    .hide_on_large {
+        display: none;
+    }
+    
+    .contact_on_large {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        background-color: rgb(243, 243, 243);
+        height: 400px;
+    }
+
+    .contact_on_large>.coordonnees>.coordonnees_content>.coordonnes_line {
+        font-size: 1.5rem;
+    }
+
+    .contact_on_large>.coordonnees {
+        height: 240px;
+        display: flex;
+        margin: 60px 0 60px 0;
+        align-items: center;
+    }
+
+    .contact_on_large>.iframe_maps {
+        justify-content: flex-start;
+        height: 350px;
+        margin-top: 25px;
+    }
+
+    .contact_on_large>.coordonnees>.contact_photo_div {
+        height: 200px;
+        display: flex;
+        align-items: center;
+    }
+
+    #contact_form {
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .titre_formulaire {
+        font-size: 2rem;
+    }
+
+    #contact_form>.input-field>label,
+    #contact_form>.input_alert {
+        font-size: 1rem;
+    }
+
+
+
+
+}

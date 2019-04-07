@@ -1,0 +1,34 @@
+.up_container,
+.up_container>.fa-arrow-up,
+.up_container>span {
+    height: 10px;
+    line-height: 10px;
+    color: hsl(203, 98%, 19%);
+    margin-bottom: 20px;
+}
+
+.anchor_container {
+    background-color: rgb(243, 243, 243);
+    margin-top: 0!important;
+}
+
+.up_container>.fa-arrow-up {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Responsive webdesign for middle sized devices */
+@media only screen and (min-width: 768px) {
+    .up_container>.fa-arrow-up,
+    .up_container>span {
+        font-size: 1.5rem;
+    }
+}
+
+/* Responsive webdesign for large sized devices */
+@media only screen and (min-width: 1000px) {
+    .up_container>.fa-arrow-up,
+    .up_container>span {
+        font-size: 1.3rem;
+    }
+}

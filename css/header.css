@@ -1,0 +1,242 @@
+html,
+body {
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: white;
+    margin: 0!important;
+    height: 100px;
+    max-width: 100%;
+    padding: 10px;
+}
+
+.logo_div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.logo_div>a>img {
+    box-shadow: 0 8px 6px -6px black;
+}
+
+.dropdown-content.nested {
+    overflow-y: visible!important;
+ }
+ 
+ .dropdown-content .dropdown-content {
+    margin-left: 100%!important;
+ }
+
+ .dropdown-content>li>a {
+     color: hsl(203, 98%, 19%);
+ }
+
+img {
+    height: 70px;
+}
+
+.menu_header {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 4px 0 rgb(97, 96, 96);
+    width: 100%;
+    margin-right: 30px;
+    padding: 0;
+}
+
+.logo_menu {
+    width: auto;
+    transform: scale(0.7);
+}
+
+.menu_header>ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.menu_header>ul>li {
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    line-height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu_header>ul>.menu_link_dropdown {
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.menu_link_dropdown>i {
+    height: 50px;
+    line-height: 50px;
+}
+
+.menu_header>ul>li>a {
+    color: hsla(203, 100%, 19%, 0.75);
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    font-size: 0.9rem;
+}
+
+.menu_header>ul>li:hover>a,
+.menu_header>ul>li:focus>a,
+.menu_header>ul>li:active>a {
+    color: hsl(203, 98%, 19%);
+    transition: all 200ms ease-in;
+}
+
+.selected {
+    background-color: hsla(203, 100%, 19%, 0.247)!important;
+    border-bottom: 2px solid hsl(203, 98%, 19%)!important;
+    transition: all 300ms ease-in!important;
+    height: 80px!important;
+    display: flex;
+    align-items: center;
+}
+
+.selected_link {
+    color: hsl(203, 98%, 19%)!important;
+    transition: all 500ms ease-in!important;
+    height: 80px!important;
+    display: flex;
+    align-items: center;
+}
+
+.btn-click {
+    color: #0069AA!important;
+    background-color: #fff!important;
+    border-color: #fff!important;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.btn {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(241, 241, 241);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+.btn:active,
+.btn:focus {
+    background-color: rgb(241, 241, 241);
+}
+
+.fa-bars {
+    color: gray;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+/* Responsive webdesign for middle sized devices */
+@media only screen and (min-width: 768px) {
+    header {
+        height: 100px;
+    }
+
+    .dropdown-trigger {
+        height: 100px;
+        width: 100px;
+    }
+
+    .fa-bars {
+        font-size: 3rem!important;
+    }
+
+    #dropdown1 {
+        width: 300px;
+    }
+
+    #dropdown1>li>a {
+        font-size: 1.6rem!important;
+    }
+
+    .logo_header {
+        height: 100px;
+    }
+}
+
+/* Responsive webdesign for large sized devices */
+@media only screen and (min-width: 1000px) {
+    .logo_div {
+        justify-content: flex-start;
+    }
+
+    .header {
+        height: 50px;
+        background-color: white;
+        padding: 0;
+    }
+
+    .menu_header {
+        position: fixed;
+        z-index: 42;
+        top: 0;
+        margin: 0;
+        height: 80px;
+        display: flex;
+        align-items: center!important;
+    }
+
+    .logo_menu_container {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu_large_ul {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+
+    .menu_link {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 80px!important;
+    }
+
+    .menu_header>ul>li>a>span {
+        color: transparent;
+    }
+
+    .menu_reduce {
+        height: 50px!important;
+        transition: all 500ms!important;
+    }
+
+    .logo_menu_reduce {
+        transform: scale(0.5);
+    }
+
+
+    
+
+
+
+
+
+ 
+
+}
+
+
+
+

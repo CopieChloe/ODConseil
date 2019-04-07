@@ -1,0 +1,168 @@
+ /* ACTUALITES */
+.article_container {
+    background-color: white;
+    margin: 12px;
+    margin-bottom: 0;
+    padding: 10px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.3);
+}
+
+.page_title_news {
+    background-image: url('../img/news.jpg');
+    background-size: 100%;
+    background-position: center center;
+}
+
+.articles_container {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.page_title,
+.article_title,
+.article_date {
+   color: hsl(203, 98%, 19%);
+   display: flex;
+   justify-content: center;
+}
+
+.article_title {
+    display: flex;
+    text-align: center;
+}
+
+.article_content {
+    padding: 30px;
+}
+
+.article_title>a {
+    color: hsl(203, 98%, 19%);
+    font-size: 1.5rem;
+    line-height: 20px;
+}
+
+.article_img_container {
+   display: flex;
+   justify-content: center;
+   padding: 10px;
+}
+
+.article_img {
+    object-fit: scale-down;
+}
+
+article>p>a {
+   color: hsl(203, 98%, 19%);
+}
+
+.article_btn {
+   background-color: hsl(203, 98%, 19%);
+   color: whitesmoke;
+   border: none;
+   height: 30px;
+   border-radius: 5px;
+}
+
+.retour_articles_container>a {
+   color: hsl(203, 98%, 19%);
+}
+
+.retour_articles_paragraph {
+   margin: 0;
+}
+
+.fa-arrow-left {
+   padding: 0!important;
+   display: flex;
+   justify-content: center;
+}
+
+.btn_actus {
+    margin-left: 20px;
+}
+
+/* Responsive webdesign for middle sized devices */
+@media only screen and (min-width: 768px) {
+    article>p {
+        font-size: 2rem;
+    }
+
+    .article_title>a {
+        font-size: 2.5rem;
+        height: 100px;
+        line-height: 33px;
+    }
+
+    .article_date {
+        font-size: 2rem;
+        margin-bottom: 50px;
+    }
+
+    .article_btn {
+        height: 50px;
+        padding: 5px;
+    }
+
+    .article_img_container>img {
+        min-height: 250px;
+        margin-bottom: 50px;
+    }
+
+    .article_content>p {
+        font-size: 1.5rem;
+        padding: 0 35px 0 35px;
+    }
+
+    .retour_articles_paragraph,
+    .fa-arrow-left {
+        font-size: 1.7rem;
+    }
+}
+
+/* Responsive webdesign for large sized devices */
+@media only screen and (min-width: 1000px) {
+    .article_title {
+        font-size: 2rem;
+    }
+
+    .article_date {
+        font-size: 1rem;
+    }
+
+    article>p {
+        font-size: 1rem;
+    }
+
+    .article_btn {
+        height: 30px;
+    }
+
+    .article_content>p {
+        font-size: 1rem;
+    }
+
+    .retour_articles_paragraph,
+    .fa-arrow-left {
+        font-size: 1.2rem;
+    }
+
+    .articles_container {
+        background-color: rgb(243, 243, 243);
+        padding: 50px 20px;
+    }
+
+    .article_container {
+        background-color: white;
+        box-shadow: 0 1px 3px 0 rgba(0,0,0,.3);
+        margin: 10px 150px;
+    }
+
+    article {
+        margin-top: 0;
+        margin-bottom: 0!important;
+    }
+
+    .article_img {
+        height: 200px;
+    }
+}

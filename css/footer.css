@@ -1,0 +1,120 @@
+footer {
+    background-color: lightgrey;
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    margin: 0!important;
+    z-index: 42;
+}
+
+.footer_div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_div>img {
+    box-shadow: 0 8px 6px -6px black;
+}
+
+.sitemap,
+.mentions_legales {
+    display: none;
+}
+
+.networks {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+}
+
+.networks>a {
+    color: rgb(97, 97, 97);
+    font-size: 2rem;
+}
+
+.networks>a>i:hover,
+.networks>a>i:focus,
+.networks>a>i:active {
+    color: rgb(53, 53, 53);
+    transform: scale(1.2);
+    transition: 150ms ease-in;
+}
+
+.mentions_legales_logo_rivalis {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.logo_rivalis_footer {
+    width: 100px;
+}
+
+/* Responsive webdesign for middle sized devices */
+@media only screen and (min-width: 768px) {
+    footer {
+        height: 150px;
+    }
+
+    .networks>a>i {
+        font-size: 70px;
+    }
+
+    .logo_rivalis_footer {
+        height: 100px;
+        width: 200px;
+    }
+}
+
+/* Responsive webdesign for middle sized devices */
+@media only screen and (min-width: 1000px) {
+    footer {
+        height: 80px;
+    }
+    .sitemap {
+        display: flex;
+    }
+
+    .sitemap>ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .networks>a>i {
+        font-size: 3rem;
+    }
+
+    .sitemap,
+    .sitemap>ul>li>a,
+    .sitemap_title,
+    .mentions_legales>a {
+        font-size: 0.8rem;
+        color: hsl(203, 98%, 19%);
+    }
+
+    .sitemap_title {
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .sitemap_title,
+    .mentions_legales>a {
+        font-size: 1rem;
+    }
+
+    .sitemap>ul>li>a,
+    .mentions_legales>a {
+        text-decoration: underline;
+    }
+
+    .logo_rivalis_footer {
+        height: 70px;
+        width: 150px;
+    }
+
+}

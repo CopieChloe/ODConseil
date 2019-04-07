@@ -1,0 +1,48 @@
+/* TEMOIGNAGES */
+.page_title_temoignages {
+    background-image: url('../img/witness.jpg');
+    background-size: 100%;
+}
+
+.cards_temoignages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.card_temoignage {
+    background-color: white;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.3);
+    margin: 20px 0;
+    padding: 15px;
+}
+
+.img_temoignage {
+    height: auto;
+    width: 100%;
+}
+
+
+/* Responsive webdesign for middle sized devices */
+@media only screen and (min-width: 768px) {
+   
+
+
+}
+
+/* Responsive webdesign for large sized devices */
+@media only screen and (min-width: 1000px) {
+    .cards_temoignages {
+       flex-direction: row;
+       justify-content: space-between;
+       padding: 0 150px;
+    }
+
+    .card_temoignage {
+        width: 30%;
+
+    }
+}

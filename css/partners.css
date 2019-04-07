@@ -1,0 +1,99 @@
+/* PARTENAIRES */
+.partners_container {
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.page_title_partenaires {
+    background-image: url('../img/rivalis.jpg');
+}
+
+.img_partenaires_restaurant {
+    transform: scale(0.8);
+}
+
+.video_container {
+    margin-top: 20px;
+}
+
+.video_container_partenaires {
+    display: flex;
+    justify-content: center;    
+}
+
+.rivalis_partenaire_title {
+    display: flex;
+    justify-content: center;
+}
+
+.rivalis_partenaire_title>a>img {
+    min-height: 150px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.3);
+}
+
+.partenaires_paragraph_rivalis {
+    background-color: white;
+    margin: 12px;
+    margin-bottom: 0;
+    padding: 10px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.3);
+}
+
+.partenaires_paragraph_rivalis_last {
+    margin-bottom: 20px;
+}
+
+/* Responsive webdesign for middle sized devices */
+@media only screen and (min-width: 768px) {
+    .partenaires_paragraph,
+    .partenaires_paragraph_last {
+        font-size: 1.5rem;
+        padding: 0 30px 0 30px;
+    }
+
+    .card_container_partenaires {
+        display: flex;
+        justify-content: center;
+    }
+
+    .ges_partenaire_title>a>img {
+        min-height: 130px;
+        margin-bottom: 50px;
+    }
+
+    .tabs_line,
+    .tabs,
+    .tab {
+        height: 75px!important;
+    }
+
+    .tab>a {
+        font-size: 2.1rem!important;
+        display: flex!important;
+        align-items: flex-end!important;
+        justify-content: center!important;
+        padding-bottom: 5px!important;
+    }
+}
+
+/* Responsive webdesign for large sized devices */
+@media only screen and (min-width: 1000px) {
+    .partenaires_paragraph_rivalis {
+        font-size: 1rem;
+        margin: 0 200px 50px 200px;
+        padding: 20px;
+    }  
+
+    .video_container>iframe {
+        height: 500px;
+        width: 800px;
+        margin-bottom: 50px;
+    }
+
+
+
+}

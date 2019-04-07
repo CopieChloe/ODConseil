@@ -1,0 +1,88 @@
+ 
+ /* GENERAL */
+ body, 
+ html {
+     background-color: rgb(243, 243, 243);
+ }
+ main {
+     max-width: 100%;
+     margin: 0;
+     font-family: 'Roboto', sans-serif;
+     font-size: 1.1rem;
+     background-color: rgb(243, 243, 243);
+     margin-bottom: 0!important;
+ }
+
+ .page_title {
+    margin: 0;
+    padding: 10px 10px;
+    color: white!important;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+ }
+
+ .page_title_inner {
+     background-color: rgba(0, 59, 96, 0.425);
+     height: 50%;
+     padding-left: 50px;
+     padding-right: 50px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+
+h1 {
+    font-size: 1.5rem;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+
+button,
+.btn-small {
+    background-color: #0069AA!important;
+}
+
+/* Responsive webdesign for middle sized devices */
+@media only screen and (min-width: 768px) {
+    main {
+        padding: 0;
+    }  
+    
+    .btn-small {
+        font-size: 1.3rem;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .page_title_inner {
+        padding: 20px 100px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+}
+
+/* Responsive webdesign for large sized devices */
+@media only screen and (min-width: 1000px) {
+    .page_title {
+        margin-bottom: 0!important;
+        height: 400px!important;
+        top: 0!important;
+        padding: 0;
+    }
+}
+
+
+
+
+
+
+

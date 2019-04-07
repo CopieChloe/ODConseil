@@ -1,0 +1,214 @@
+ /* ACCUEIL */
+ #page_title_home_real {
+     background-image: url('../img/home.jpg');
+     background-size: 100%;
+     height: 300px!important;
+     display: flex;
+     flex-direction: column;
+ }
+
+ #page_title_home_real>.page_title_inner {
+     height: 90%;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+
+ .page_title_inner>h1 {
+    display: flex;
+    justify-content: center;
+}
+
+ #btn_jumbo_home {
+     font-size: 1.3rem;
+     height: 40px;
+     line-height: 40px;
+     background-color: hsl(203, 98%, 19%);
+     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+ }
+
+ .carousel_container {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 70px;
+    background-color: white;
+}
+
+.carousel {
+   height: 250px;
+   max-width: 95%;
+   margin: 0;    
+}
+
+.carousel-item {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   color: rgb(36, 36, 36);
+   font-size: 1.5rem;
+   text-decoration: underline;
+   background-color: white;
+}
+
+.carousel-item>img {
+   min-height: 200px;
+}
+
+.btn_container {
+   display: flex;
+   justify-content: center;
+}
+
+.section_home_large {
+    width: 100%;
+    margin: 0!important;
+}
+
+.section_inner_container {
+    background-color: white;
+    margin: 12px;
+    padding: 10px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.3);
+}
+
+.section_even {
+    background-color: rgb(223, 221, 221);
+}
+
+.titre_section_home {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.titre_section_home,
+.section_content {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+}
+
+.icon_container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Responsive webdesign for middle sized devices */
+@media only screen and (min-width: 768px) {
+    .page_title {
+        font-size: 5rem;
+        height: 200px;
+        display: flex;
+        align-items: center;
+    }
+
+    .carousel {
+        height: 350px;
+    }
+    .carousel-item,
+    .carousel-item>img {
+        height: 300px!important;
+        width: auto!important;
+    }
+
+    .section_content {
+        font-size: 1.5rem;
+        padding: 20px!important;
+    }
+
+    .section_inner_container {
+        margin: 12px 50px;
+        padding-bottom: 20px;
+    }
+}
+
+/* Responsive webdesign for large sized devices */
+@media only screen and (min-width: 1000px) {
+    #page_title_home_real {
+        height: 100vh!important;
+    }
+
+    .page_title_inner {
+        width: 60%;
+        height: 40%!important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+   
+
+    .page_title {
+        font-size: 3rem;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .carousel {
+        min-height: 400px!important;
+    }
+
+    .carousel-item,
+    .carousel-item>img {
+        height: 400px!important;
+        width: 600px!important;
+    }
+
+    .card-reveal>.card-title {
+        font-size: 2rem!important;
+    }
+
+    .card-reveal>p,
+    .card-reveal>p>.btn-small {
+        font-size: 1rem!important;
+    }
+
+    .main_container_home_large {
+        padding: 50px 200px;
+    }
+
+    .method_btn_container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .secondary_container_home_large {
+        margin-bottom: 60px;
+    }
+
+    .subtitle_home_large {
+        margin-bottom: 40px;
+        visibility: hidden;
+    }
+
+    .txt_home_large_1 {
+        height: 170px;
+        display: flex;
+        text-align: end;
+        align-items: flex-end;
+        visibility: hidden;
+    }
+
+    .txt_home_large_2 {
+        visibility: hidden;
+    }
+
+    .img_home_large {
+        height: 170px;
+        visibility: hidden;
+    }
+
+    .section_home_large {
+        padding: 30px 100px;
+    }
+
+    .titre_section_home {
+        font-size: 1.7rem;
+    }
+
+    .section_content {
+        font-size: 1rem;
+    }
+
+    .icon_container {
+        margin-top: 15px!important;
+    }
+}
